@@ -4,54 +4,28 @@ export default {
     backgrounds: {
       default: 'light',
     },
+    layout: 'fullscreen',
   },
 };
 
 export const Header = () => (
-  <>
-    <nav className="navbar navbar-light">
-      <div className="container">
-        <a className="navbar-brand" href="">
-          conduit
-        </a>
-        <ul className="nav navbar-nav pull-xs-right">
-          <li className="nav-item">
-            <a className="nav-link" href="">
-              Log in
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="">
-              Create account
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <nav className="navbar">
+    <a className="navbar-title" href="">
+      <img className="navbar-title__logo" src="energy.png" alt="" aria-hidden={true} />
+      <h1 className="navbar-title__label">conduit</h1>
+    </a>
 
-    <nav className="navbar navbar-light">
-      <div className="container">
-        <a className="navbar-brand" href="">
-          conduit
+    <ul className="navbar-links">
+      <li className="nav-item">
+        <a className="rw-btn-default" href="">
+          Create article
         </a>
-        <ul className="nav navbar-nav pull-xs-right">
-          <li className="nav-item">
-            <a className="nav-link" href="">
-              <i className="ion-compose"></i>&nbsp;Create Article
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="">
-              <i className="ion-gear-a"></i>&nbsp;Settings
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="">
-              Gerome
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </>
+      </li>
+      <li className="nav-item">
+        <a className="rw-link" href="">
+          <img className="rw-avatar" src="avatar.jpeg" alt="user avatar" />
+        </a>
+      </li>
+    </ul>
+  </nav>
 );
