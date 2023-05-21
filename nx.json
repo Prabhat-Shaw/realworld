@@ -45,8 +45,9 @@
     "@nx/react": {
       "application": {
         "style": "css",
-        "unitTestRunner": "jest",
         "linter": "eslint",
+        "bundler": "vite",
+        "unitTestRunner": "jest",
         "babel": true
       },
       "component": {
@@ -54,10 +55,10 @@
       },
       "library": {
         "style": "css",
-        "unitTestRunner": "jest",
-        "linter": "eslint"
+        "linter": "eslint",
+        "unitTestRunner": "jest"
       }
     }
   },
-  "defaultProject": "demo"
+  "defaultProject": "storybook"
 }
